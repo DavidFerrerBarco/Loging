@@ -20,8 +20,6 @@ class LogingActivity : AppCompatActivity() {
         binding = ActivityLogingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.toolbar)
-
 
     }
 

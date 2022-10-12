@@ -7,31 +7,45 @@
     tools:context=".LogingActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/constraintLayout"
+        app:layout_anchorGravity="center">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="232dp"
             android:layout_height="48dp"
-            android:text="MonkeyFlip"
+            android:layout_marginStart="91dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="484dp"
+            android:text="MonkeyFilms"
             android:textAlignment="center"
             android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="87dp"
             android:layout_height="28dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="240dp"
+            android:layout_marginBottom="248dp"
             android:text="Password"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="89dp"
             android:layout_height="24dp"
+            android:layout_marginEnd="240dp"
+            android:layout_marginBottom="360dp"
             android:text="User"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -39,25 +53,33 @@
         <EditText
             android:id="@+id/editTextTextPersonName"
             android:layout_width="254dp"
-            android:layout_height="42dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="84dp"
+            android:layout_marginBottom="320dp"
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <EditText
             android:id="@+id/editTextTextPassword"
             android:layout_width="257dp"
-            android:layout_height="41dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="208dp"
             android:ems="10"
             android:inputType="textPassword"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="254dp"
             android:layout_height="67dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginBottom="100dp"
             android:text="Sign In"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -66,11 +88,27 @@
             android:id="@+id/profile_image"
             android:layout_width="196dp"
             android:layout_height="151dp"
-            android:src="@drawable/macaco"
+            android:layout_marginEnd="108dp"
+            android:layout_marginBottom="532dp"
+            android:src="@drawable/usuario"
             app:civ_border_color="#FF000000"
             app:civ_border_width="2dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="145dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="146dp"
+            android:layout_marginBottom="49dp"
+            android:text="Bienvenido Usuario"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
